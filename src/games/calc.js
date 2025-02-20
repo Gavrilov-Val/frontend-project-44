@@ -16,8 +16,8 @@ const calculate = (num1, num2, operator) => {
 };
 
 const generateQuestionAndAnswer = () => {
-  const num1 = getRandomNumber(1, 100);
-  const num2 = getRandomNumber(1, 100);
+  const num1 = getRandomNumber(1, 30);
+  const num2 = getRandomNumber(1, 30);
   const operators = ['+', '-', '*'];
   const operator = operators[getRandomNumber(0, operators.length - 1)];
 
