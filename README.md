@@ -6,3 +6,6 @@
 
 ### Brain-even game example:
 [![asciicast](https://asciinema.org/a/g9zlo3OclableIAAGZM6JYjIl.svg)](https://asciinema.org/a/g9zlo3OclableIAAGZM6JYjIl)
+
+### Brain-calc game example:
+[![asciicast](https://asciinema.org/a/912cyhGLHYyx41OUviSu41JLc.svg)](https://asciinema.org/a/912cyhGLHYyx41OUviSu41JLc)
