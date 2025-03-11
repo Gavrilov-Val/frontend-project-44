@@ -7,7 +7,10 @@ const generateQuestionAndAnswer = () => {
   const startNumber = getRandomNumber(1, 10);
   const increment = getRandomNumber(1, 10);
   const hiddenNumber = getRandomNumber(1, 10);
-  const progressionArray = Array.from({ length: 10 }, (start, i) => startNumber + (increment * i));
+  const progressionLength = 10;
+  const progressionArray = Array.from(
+    { length: progressionLength }, (start, i) => startNumber + (increment * i)
+  );
   const correctAnswer = progressionArray[hiddenNumber - 1].toString();
   progressionArray[hiddenNumber - 1] = '..';
   const question = progressionArray.join(' ');
