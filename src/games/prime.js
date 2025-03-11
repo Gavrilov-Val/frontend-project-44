@@ -3,22 +3,20 @@ import getRandomNumber from '../utils.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const divisorsList = (num) => {
-  const divisors = [];
-  let divisor = 2;
-  let number = num;
-  while (number >= 2) {
-    if (number % divisor === 0) {
-      divisors.push(divisor);
-      number /= divisor;
-    } else {
-      divisor += 1;
+const isPrime = (number) => {
+  if (number < 2) {
+    return false;
+  }
+
+  const sqrt = Math.sqrt(number);
+  for (let i = 2; i <= sqrt; i += 1) {
+    if (number % i === 0) {
+      return false;
     }
   }
-  return divisors;
-};
 
-const isPrime = (number) => divisorsList(number).length === 1;
+  return true;
+};
 
 const generateQuestionAndAnswer = () => {
   const number = getRandomNumber(1, 100);
